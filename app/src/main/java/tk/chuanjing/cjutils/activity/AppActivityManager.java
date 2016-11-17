@@ -6,9 +6,6 @@ import android.content.Context;
 
 import java.util.Stack;
 
-/**
- * Created by Administrator on 2016/1/7.
- */
 public class AppActivityManager {
     private static Stack<Activity> activityStack;
     private static AppActivityManager appManager;
