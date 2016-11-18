@@ -13,6 +13,7 @@ public class AppActivityManager {
     private AppActivityManager(){
         activityStack=new Stack<Activity>();
     }
+
     public static AppActivityManager getInstance() {
         if (appManager == null) {
             synchronized (AppActivityManager.class) {
