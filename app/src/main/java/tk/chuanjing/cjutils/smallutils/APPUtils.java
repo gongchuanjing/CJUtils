@@ -1,19 +1,19 @@
 package tk.chuanjing.cjutils.smallutils;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
-import org.json.JSONObject;
-
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.provider.Settings.Secure;
 import android.util.Log;
+
+import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  * @author ChuanJing
@@ -72,7 +72,7 @@ public class APPUtils {
 	/**
 	 * 获取设备id
 	 */
-	public String getDeviceId(Context mContext) {
+	public static String getDeviceId(Context mContext) {
 		return Secure.getString(mContext.getContentResolver(), Secure.ANDROID_ID);
 	}
 	
