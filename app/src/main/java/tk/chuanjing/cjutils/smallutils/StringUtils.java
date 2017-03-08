@@ -84,6 +84,7 @@ public class StringUtils {
 	 * @return
 	 */
 	public static String intDiv(String str) {
+//		String moneyStr = "1234141123";
 		String moneyStr = "";
 		// 不足三位不截取，不然会出现,100
 		if (!TextUtils.isEmpty(str)) {
